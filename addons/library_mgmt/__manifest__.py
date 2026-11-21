@@ -6,7 +6,11 @@
     'author': 'Abdelrahman Soliman',
     'license': 'LGPL-3',
     'depends': ['base'],
-    'data': [],
+    "data": [
+        "security/ir.access.csv",
+        "views/base_menu.xml",
+        "views/library_book_views.xml"
+    ],
     'installable': True,
     'application': True,
 }

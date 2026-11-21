@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="library_management_root_menu"
+        name="Library Management"
+        sequence="10"
+        web_icon="library_mgmt,static/description/icon.png"/>
+
+    <menuitem
+        id="library_root_menu"
+        name="Library"
+        parent="library_management_root_menu"/>
+
+</odoo>
