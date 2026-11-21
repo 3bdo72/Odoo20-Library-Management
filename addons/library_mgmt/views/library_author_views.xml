@@ -29,10 +29,10 @@
                         </h1>
                     </div>
                     <group>
-                        <group name="basic.info" string="Basic Info.">
+                        <group name="basic_info" string="Basic Info.">
                             <field name="country"/>
                             <field name="birth_date"/>
-                            <field name="book_ids"/>
+                            <field name="book_ids" widget="many2many_tags"/>
                         </group>
                     </group>
                 </sheet>
