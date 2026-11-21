@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View library.author View List -->
+    <record id="view_library_author_list" model="ir.ui.view">
+        <field name="name">view.library.author.list</field>
+        <field name="model">library.author</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="country"/>
+                <field name="birth_date"/>
+                <field name="book_ids"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- View library.author form -->
+    <record id="view_library_author_form" model="ir.ui.view">
+        <field name="name">view.library.author.form</field>
+        <field name="model">library.author</field>
+        <field name="arch" type="xml">
+            <form string="Library Author">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" placeholder="Author's Name..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group name="basic.info" string="Basic Info.">
+                            <field name="country"/>
+                            <field name="birth_date"/>
+                            <field name="book_ids"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- Action library.author -->
+    <record id="library_author_action" model="ir.actions.act_window">
+        <field name="name">Library Author</field>
+        <field name="res_model">library.author</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Library Author menu -->
+    <menuitem
+        id="author_menu"
+        name="Authors"
+        action="library_author_action"
+        parent="library_root_menu"/>
+</odoo>

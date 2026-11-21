@@ -9,6 +9,7 @@
     "data": [
         "security/ir.access.csv",
         "views/base_menu.xml",
+        "views/library_author_views.xml",
         "views/library_book_views.xml"
     ],
     'installable': True,
